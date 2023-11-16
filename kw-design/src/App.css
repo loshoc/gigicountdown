@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.countdown-container {
+  background-color: black;
+  font-family: 'digital-7', sans-serif;
+  color: pink;
+  text-align: center;
+}
+
+.countdown-text {
+  font-size: 50px;
+}
