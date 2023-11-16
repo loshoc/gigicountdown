@@ -27,10 +27,13 @@ const CountdownApp = () => {
   };
 
   return (
+    <>
+    <p>There are still</p>
     <div>
-      <h1>Countdown to 2023-12-09 17:25</h1>
       <p>Remaining time: {getRemainingTimeString(remainingTime)}</p>
     </div>
+    <p>Untill Gigi kiss me</p>
+    </>
   );
 };
 
