@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './App.css';
 
 const CountdownApp = () => {
   const targetDate = new Date('2023-12-09T17:25:00');
@@ -27,13 +28,13 @@ const CountdownApp = () => {
   };
 
   return (
-    <>
+    <div>
     <p>There are still</p>
     <div>
       <p>Remaining time: {getRemainingTimeString(remainingTime)}</p>
     </div>
     <p>Untill Gigi kiss me</p>
-    </>
+    </div>
   );
 };
 
