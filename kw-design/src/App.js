@@ -20,15 +20,17 @@ const CountdownApp = () => {
   const getRemainingTimeString = (remainingTime) => {
     const seconds = Math.floor(remainingTime / 1000) % 60;
     const minutes = Math.floor(remainingTime / 60000) % 60;
-    const hours = Math.floor(remainingTime / 3600000);
+    const hours = Math.floor(remainingTime / 3600000) % 24;
+    const days = Math.floor(remainingTime / 86400000);
 
-    return `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    return `${days}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
   };
 
   return (
     <div>
-      <h1>Countdown to 2023-12-09 17:25</h1>
-      <p>Remaining time: {getRemainingTimeString(remainingTime)}</p>
+      <h1>There are still</h1>
+      <p>{getRemainingTimeString(remainingTime)}</p>
+      <h1>Until Gigi kiss me</h1>
     </div>
   );
 };
