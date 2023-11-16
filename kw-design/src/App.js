@@ -28,11 +28,8 @@ const CountdownApp = () => {
 
   return (
     <div>
-    <p>There are still</p>
-    <div className="countdown-container">
-      <p className="countdown-text">{getRemainingTimeString(remainingTime)}</p>
-    </div>
-    <p>Untill Gigi kiss me</p>
+      <h1>Countdown to 2023-12-09 17:25</h1>
+      <p>Remaining time: {getRemainingTimeString(remainingTime)}</p>
     </div>
   );
 };
