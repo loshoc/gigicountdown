@@ -39,7 +39,7 @@ const CountdownApp = () => {
       <p className="countdown-text">{getDaysFromRemainingTime(remainingTime)}</p>
       <p className="countdown-text">{getRemainingTimeString(remainingTime)}</p>
     </div>
-    <h1>Untill Gigi back home</h1>
+    <h1>Untill Gigi kisses me</h1>
     </div>
   );
 };
